@@ -598,12 +598,6 @@ p {
 }
 
 @media (max-width: 500px) {
-  .containerVideo {
-    height: 40%;
-  }
-}
-
-@media (max-width: 470px) {
 
     /* GENERALES */
     #email{
