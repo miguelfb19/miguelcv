@@ -208,6 +208,7 @@ summary {
   cursor: pointer;
   font-weight: 600;
   line-height: 160%;
+  text-decoration: underline;
 }
 
 summary::marker {
@@ -215,7 +216,6 @@ summary::marker {
 }
 
 summary:hover {
-  text-decoration: underline;
   filter: invert(0.5);
 }
 
@@ -701,55 +701,150 @@ p {
     #experience #right p{
         font-size: 4vw;
     }
-  
+
+    /* PORTAFOLIO */
+
+    #briefcase .title{
+        font-size: 11vw;
+    }
+
+    #briefcase li{
+        width: 170px;
+        filter: saturate(200%);
+    }
+
+    .btn-briefcase {
+        width: 35% !important;
+    }
+    
+    #briefcase li h4, #briefcase li p{
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 400px) {
-  summary {
+    
+  /* GENERALES */
+  #email{
+    font-size: 4vw;
+}
+
+#left{
+    width: 100%;
+    height: 80vh;
+  }
+
+  #right{
+    width: 100%;
+    height: 80vh;
+  }
+
+  p, #summary li{
+    font-size: 4vw;
+    width: 90% !important;
+  }
+
+  .btn{
+    padding: 2vw;
+    font-size: 2.5vw;  
+}
+.title{
+    font-size: 11vw;
+    margin-bottom: 15%;
+}
+  /* INDEX */
+
+.linkPortada{
+    height: 30vh;
+    width: 60vw;
+    margin-bottom: 10% !important;
+}
+
+#index #left a{
+    margin: 0 auto;
+}
+
+#index h2{
+    font-size: 5vw;
+}
+
+#index h3{
+    font-size: 4vw;
+    margin-bottom: 6%;
+}
+
+.emailBtn{
+    padding: 2vw;
     font-size: 2.5vw;
-  }
+}
 
-  .details p,
-  .details a {
-    font-size: 2.5vw;
-  }
-  .linkPortada {
-    height: 35vh;
-    width: 42vw;
-  }
+/* FORMACION */
 
-  .linkedin {
-    width: 40px;
-  }
+#trainning #right .title{
+    font-size: 11vw;
+}
 
-  p,
-  #summary li {
-    font-size: 10.7px;
-  }
+summary{
+    font-size: 4vw;
+}
 
-  #index h2 {
-    font-size: 20px;
-  }
+.details p, .details a{
+    font-size: 3.5vw;
+}
 
-  #index h3 {
-    font-size: 15px;
-  }
+#trainning{
+    display: flex;
+    flex-direction: column-reverse;
+}
 
-  .mainMenu {
-    gap: 0;
-  }
-  .btn {
-    width: 52px;
-    font-size: 5.5px;
-  }
+#trainning #left{
+    height: 20vh;
+}
 
-  #experience #right .title {
-    font-size: 20px;
-  }
+/* EXPERIENCIA */
 
-  .containerVideo {
-    height: 35%;
-  }
+#experience #right .title{
+    font-size: 11vw;
+}
+
+#experience #right{
+    height: 80vh;
+}
+
+#experience #left {
+    display: none;
+}
+
+#experience .btn{
+    margin: 0 auto;
+}
+
+#experience #right h2{
+    font-size: 5vw;
+}
+
+#experience #right p{
+    font-size: 4vw;
+}
+
+/* PORTAFOLIO */
+
+#briefcase .title{
+    font-size: 11vw;
+}
+
+#briefcase li{
+    width: 170px;
+    filter: saturate(200%);
+}
+
+.btn-briefcase {
+    width: 35% !important;
+}
+
+#briefcase li h4, #briefcase li p{
+    font-size: 13px;
+}
 }
 
 @media (max-width: 340px) {
