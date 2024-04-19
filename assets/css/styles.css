@@ -846,31 +846,3 @@ summary{
     font-size: 13px;
 }
 }
-
-@media (max-width: 340px) {
-  .btn {
-    width: 14.5vw;
-    letter-spacing: 0.5px;
-    font-size: 6px;
-  }
-  .linkPortada {
-    height: 30vh;
-    width: 42vw;
-  }
-
-  .containerVideo {
-    height: 30%;
-  }
-
-  #experience #right .title {
-    font-size: 15px;
-  }
-
-  #experience #right h2 {
-    font-size: 11px;
-  }
-
-  #experience #right p {
-    font-size: 9px;
-  }
-}
