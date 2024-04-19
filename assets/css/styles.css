@@ -48,7 +48,10 @@ p {
   outline: none;
   text-decoration: none;
   width: 25%;
-  text-align: center !important;
+  text-align:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--mont);
 }
 
@@ -601,36 +604,110 @@ p {
 }
 
 @media (max-width: 470px) {
-  summary {
-    font-size: 2vw;
-  }
 
-  .details p,
-  .details a {
-    font-size: 2vw;
-  }
-  p,
-  #summary li {
-    font-size: 2.5vw;
-  }
+    /* GENERALES */
+    #email{
+        font-size: 4vw;
+    }
 
-  .btn {
-    font-size: 1.7vw;
-    width: 15vw;
-  }
+    #left{
+        width: 100%;
+        height: 80vh;
+      }
+    
+      #right{
+        width: 100%;
+        height: 80vh;
+      }
+    
+      p, #summary li{
+        font-size: 4vw;
+        width: 90% !important;
+      }
 
-  .mainMenu {
-    gap: 3%;
-  }
+      .btn{
+        padding: 2vw;
+        font-size: 2.5vw;  
+    }
+    .title{
+        font-size: 11vw;
+        margin-bottom: 15%;
+    }
+      /* INDEX */
 
-  .linkPortada {
-    height: 40vh;
-    width: 40vw;
-  }
+    .linkPortada{
+        height: 30vh;
+        width: 60vw;
+        margin-bottom: 10% !important;
+    }
 
-  #summary #right li {
-    line-height: 150%;
-  }
+    #index #left a{
+        margin: 0 auto;
+    }
+
+    #index h2{
+        font-size: 5vw;
+    }
+
+    #index h3{
+        font-size: 4vw;
+        margin-bottom: 6%;
+    }
+
+    .emailBtn{
+        padding: 2vw;
+        font-size: 2.5vw;
+    }
+
+    /* FORMACION */
+
+    #trainning #right .title{
+        font-size: 11vw;
+    }
+
+    summary{
+        font-size: 4vw;
+    }
+
+    .details p, .details a{
+        font-size: 3.5vw;
+    }
+
+    #trainning{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #trainning #left{
+        height: 20vh;
+    }
+
+    /* EXPERIENCIA */
+
+    #experience #right .title{
+        font-size: 11vw;
+    }
+
+    #experience #right{
+        height: 80vh;
+    }
+
+    #experience #left {
+        display: none;
+    }
+
+    #experience .btn{
+        margin: 0 auto;
+    }
+
+    #experience #right h2{
+        font-size: 5vw;
+    }
+
+    #experience #right p{
+        font-size: 4vw;
+    }
+  
 }
 
 @media (max-width: 400px) {
