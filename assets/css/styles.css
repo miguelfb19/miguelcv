@@ -48,7 +48,7 @@ p {
   outline: none;
   text-decoration: none;
   width: 25%;
-  text-align: center;
+  text-align: center !important;
   font-family: var(--mont);
 }
 
