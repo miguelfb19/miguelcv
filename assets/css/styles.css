@@ -369,7 +369,6 @@ p {
 }
 
 @media (max-width: 950px) {
-
   .btn-briefcase {
     width: 10% !important;
   }
@@ -413,160 +412,50 @@ p {
   }
 }
 
-@media (max-width: 800px) {
-
-    #briefcase{
-        width: 90%;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
-  summary {
-    font-size: 1.4vw;
+@media (max-width: 850px) {
+  #email {
+    font-size: 2.2vw;
+  }
+  #left {
+    height: 80vh;
   }
 
-  .details p,
-  .details a {
-    font-size: 1.4vw;
+  #right {
+    height: 80vh;
   }
   p,
   #summary li {
-    font-size: 1.6vw;
-  }
-
-  .linkPortada {
-    width: 25vw;
-    height: 40vh;
-  }
-
-  .containerVideo {
-    height: 67%;
-  }
-}
-
-@media (max-width: 700px) {
-
-    #briefcase li{
-        width: 150px;
-    }
-
-    #briefcase li h4, #briefcase li p{
-        font-size: 11px;
-    }
-
-    .projects{
-        justify-content: center;
-    }
-
-  summary {
-    font-size: 1.6vw;
-  }
-
-  .details p,
-  .details a {
-    font-size: 1.6vw;
-  }
-  #experience main {
-    width: 95%;
-  }
-
-  .linkPortada {
-    margin-bottom: 7%;
-    height: 37vh;
-    width: 25vw;
-  }
-
-  #index h2 {
-    font-size: 2.5vw;
-  }
-
-  #index h3 {
     font-size: 2vw;
+    width: 90% !important;
   }
 
-  p,
-  #summary li {
-    font-size: 1.8vw;
-  }
-
-  #summary #right li {
-    line-height: 130%;
-  }
-
-  .containerVideo {
-    height: 60%;
-  }
-}
-
-@media (max-width: 650px) {
   .btn {
+    padding: 1vw;
     font-size: 1.2vw;
-    width: 40%;
   }
-
-  .mainMenu {
-    gap: 10%;
-  }
-
-  .linkPortada {
-    height: 35vh;
-    width: 25vw;
-  }
-
-  .containerVideo {
-    height: 55%;
-  }
-}
-
-@media (max-width: 600px) {
-  summary {
-    font-size: 1.7vw;
-  }
-
-  .details p,
-  .details a {
-    font-size: 1.7vw;
-  }
-
-  #trainning #right .title {
-    font-size: 4.5vw;
-  }
-
-  #experience #right .title {
-    font-size: 150%;
-  }
-
-  #experience #right h2 {
-    font-size: 80%;
-  }
-  #experience #right p {
-    font-size: 65%;
-  }
-  .containerVideo {
-    height: 50%;
-  }
-
-  .title {
-    font-size: 6vw;
-  }
-
-  .linkPortada {
-    height: 40vh;
-    width: 33vw;
-  }
-
-  .btn {
-    padding: 6px;
-    width: 35%;
-    font-size: 1.3vw;
-  }
-
-  .mainMenu {
+  .mainMenu{
+    flex-wrap: wrap;
     width: 80%;
   }
 
-  p,
-  #summary li {
-    font-size: 2vw;
+  .mainMenu a{
+    height: auto;
+    width: 30%;
+  }
+  .title {
+    font-size: 6vw;
+    margin-bottom: 15%;
+  }
+  /* INDEX */
+
+  .linkPortada {
+    height: 25vh;
+    width: 35vw;
+    margin-bottom: 10% !important;
+  }
+
+  #index #left a {
+    margin: 0 auto;
   }
 
   #index h2 {
@@ -574,151 +463,139 @@ p {
   }
 
   #index h3 {
-    font-size: 2.5vw;
-  }
-}
-
-@media (max-width: 550px) {
-  p,
-  #summary li {
-    font-size: 2.3vw;
+    font-size: 2vw;
+    margin-bottom: 6%;
   }
 
-  .btn {
-    font-size: 1.5vw;
-  }
-
-  .linkedin {
-    margin-top: 30%;
-  }
-
-  .linkPortada {
-    width: 35vw;
+  .emailBtn {
+    padding: 1vw;
+    font-size: 1.2vw;
   }
 }
 
 @media (max-width: 500px) {
+  /* GENERALES */
+  #email {
+    font-size: 4vw;
+  }
 
-    /* GENERALES */
-    #email{
-        font-size: 4vw;
-    }
+  #left {
+    width: 100%;
+    height: 80vh;
+  }
 
-    #left{
-        width: 100%;
-        height: 80vh;
-      }
-    
-      #right{
-        width: 100%;
-        height: 80vh;
-      }
-    
-      p, #summary li{
-        font-size: 4vw;
-        width: 90% !important;
-      }
+  #right {
+    width: 100%;
+    height: 80vh;
+  }
 
-      .btn{
-        padding: 2vw;
-        font-size: 2.5vw;  
-    }
-    .title{
-        font-size: 11vw;
-        margin-bottom: 15%;
-    }
-      /* INDEX */
+  p,
+  #summary li {
+    font-size: 4vw;
+    width: 90% !important;
+  }
 
-    .linkPortada{
-        height: 30vh;
-        width: 60vw;
-        margin-bottom: 10% !important;
-    }
+  .btn {
+    padding: 2vw;
+    font-size: 2.5vw;
+  }
+  .title {
+    font-size: 11vw;
+    margin-bottom: 15%;
+  }
+  /* INDEX */
 
-    #index #left a{
-        margin: 0 auto;
-    }
+  .linkPortada {
+    height: 30vh;
+    width: 60vw;
+    margin-bottom: 10% !important;
+  }
 
-    #index h2{
-        font-size: 5vw;
-    }
+  #index #left a {
+    margin: 0 auto;
+  }
 
-    #index h3{
-        font-size: 4vw;
-        margin-bottom: 6%;
-    }
+  #index h2 {
+    font-size: 5vw;
+  }
 
-    .emailBtn{
-        padding: 2vw;
-        font-size: 2.5vw;
-    }
+  #index h3 {
+    font-size: 4vw;
+    margin-bottom: 6%;
+  }
 
-    /* FORMACION */
+  .emailBtn {
+    padding: 2vw;
+    font-size: 2.5vw;
+  }
 
-    #trainning #right .title{
-        font-size: 11vw;
-    }
+  /* FORMACION */
 
-    summary{
-        font-size: 4vw;
-    }
+  #trainning #right .title {
+    font-size: 11vw;
+  }
 
-    .details p, .details a{
-        font-size: 3.5vw;
-    }
+  summary {
+    font-size: 4vw;
+  }
 
-    #trainning{
-        display: flex;
-        flex-direction: column-reverse;
-    }
+  .details p,
+  .details a {
+    font-size: 3.5vw;
+  }
 
-    #trainning #left{
-        height: 20vh;
-    }
+  #trainning {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
-    /* EXPERIENCIA */
+  #trainning #left {
+    height: 20vh;
+  }
 
-    #experience #right .title{
-        font-size: 11vw;
-    }
+  /* EXPERIENCIA */
 
-    #experience #right{
-        height: 80vh;
-    }
+  #experience #right .title {
+    font-size: 11vw;
+  }
 
-    #experience #left {
-        display: none;
-    }
+  #experience #right {
+    height: 80vh;
+  }
 
-    #experience .btn{
-        margin: 0 auto;
-    }
+  #experience #left {
+    display: none;
+  }
 
-    #experience #right h2{
-        font-size: 5vw;
-    }
+  #experience .btn {
+    margin: 0 auto;
+  }
 
-    #experience #right p{
-        font-size: 4vw;
-    }
+  #experience #right h2 {
+    font-size: 5vw;
+  }
 
-    /* PORTAFOLIO */
+  #experience #right p {
+    font-size: 4vw;
+  }
 
-    #briefcase .title{
-        font-size: 11vw;
-    }
+  /* PORTAFOLIO */
 
-    #briefcase li{
-        width: 170px;
-        filter: saturate(200%);
-    }
+  #briefcase .title {
+    font-size: 11vw;
+  }
 
-    .btn-briefcase {
-        width: 35% !important;
-    }
-    
-    #briefcase li h4, #briefcase li p{
-        font-size: 13px;
-    }
+  #briefcase li {
+    width: 170px;
+    filter: saturate(200%);
+  }
+
+  .btn-briefcase {
+    width: 35% !important;
+  }
+
+  #briefcase li h4,
+  #briefcase li p {
+    font-size: 13px;
+  }
 }
-
