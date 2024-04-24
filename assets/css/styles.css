@@ -417,11 +417,11 @@ p {
     font-size: 2.2vw;
   }
   #left {
-    height: 80vh;
+    height: 100vh;
   }
 
   #right {
-    height: 80vh;
+    height: 100vh;
   }
   p,
   #summary li {
@@ -470,6 +470,62 @@ p {
   .emailBtn {
     padding: 1vw;
     font-size: 1.2vw;
+  }
+
+  /*RESUMEN*/
+
+  #summary ul{
+    line-height: 2vh;
+  }
+
+  /* PORTAFOLIO */
+
+  #briefcase {
+    width: 90%;
+  }
+
+  #briefcase li {
+    width: 30vw;
+    filter: saturate(200%);
+  }
+
+  .btn-briefcase {
+    width: 15% !important;
+  }
+
+  #briefcase li h4,
+  #briefcase li p {
+    font-size: 2vw;
+  }
+
+  .projects{
+    justify-content: center;
+  }
+
+  /* FORMACION */
+
+  summary {
+    font-size: 2vw;
+  }
+
+  .details p,
+  .details a {
+    font-size: 2vw;
+  }
+
+  /*EXPEREIENCIA*/
+
+  #experience #right h2{
+    font-size: 2.5vw;
+  }
+
+  #experience .btn{
+    margin-top: 10%;
+  }
+
+  .video{
+    width: 95%;
+    height: 35vh;
   }
 }
 
