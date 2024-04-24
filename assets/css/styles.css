@@ -526,6 +526,7 @@ p {
   .video{
     width: 95%;
     height: 35vh;
+    margin-top: 60%;
   }
 }
 
