@@ -4,45 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio personal</title>
-    <link rel="shortcut icon" href="assets/imagenes/logos/file-person-fill.svg" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link
+      rel="shortcut icon"
+      href="assets/imagenes/logos/file-person-fill.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body id="index">
-      <section id="left">
-        <a href="secondPages/resumen.html" class="linkPortada"><img src="assets/imagenes/fotos/portada.jpg" alt="foto miguel" class="ppalPicture"/></a>
-        <h2>Miguel Ángel Fernández Barco</h2>
-        <h3>Desarrollador FrontEnd <br> (FrontEnd Developer)</h3>
-        <button id="emailBtn" class="emailBtn btn" onclick="mostrarCorreo()">Enviar Correo</button>
-        <p id="email" style="display: none">miguelangelfb19@utp.edu.co</p>
-        <a href="https://www.linkedin.com/in/miguel-angel-fernandez-barco-7b802429b" target="_blank"
-          ><img src="assets/imagenes/logos/linkedin.svg" alt="linkedin" class="linkedin"/></a>
+    <section id="left">
+      <a href="secondPages/resumen.html" class="linkPortada"
+        ><img
+          src="assets/imagenes/fotos/portada.jpg"
+          alt="foto miguel"
+          class="ppalPicture"
+      /></a>
+      <h2>Miguel Ángel Fernández Barco</h2>
+      <h3>
+        Desarrollador FrontEnd <br />
+        (FrontEnd Developer)
+      </h3>
+      <button id="emailBtn" class="emailBtn btn" onclick="mostrarCorreo()">
+        Ver Email
+      </button>
+      <div id="email" style="display: none">
+        <p class="textEmail">miguelangelfb19@utp.edu.co</p>
+        <a href="#" id="copy" onclick="copiar()"
+          ><img
+            src="./assets/imagenes/logos/copy.svg"
+            alt="copy"
+            class="copyImg"
+        /></a>
+        <span class="copiado">¡Email copiado!</span>
+      </div>
+      <section id="redes">
+        <a
+        href="https://www.linkedin.com/in/miguel-angel-fernandez-barco-7b802429b"
+        target="_blank"
+        ><img
+          src="assets/imagenes/logos/linkedin.svg"
+          alt="linkedin"
+          class="linkedin"
+      /></a>
+      <a href="https://github.com/miguelfb19" target="_blank"><img src="./assets/imagenes/logos/github.svg" alt="github" class="git"></a>
+      
       </section>
-      <section id="right">
-        <h1 class="title">SOBRE MI</h1>
-        <p>
-          Soy desarrollador de FrontEnd, técnico en sistemas y
-          computación, me apasiona desarrollar mis habilidades y
-          aprendizajes de programación con proyectos personales y realizando diferentes cursos sobre desarrollo
-          FrontEnd y  BackEnd, usando diferentes tecnologías como Nodejs, MongoDB, Angular
-          React y Vuejs, también he completado proyectos personales con estas tecnologías y me encanta seguir creciendo cada vez
-          en mi área profesional como desarrollador.
+      
+    </section>
+    <section id="right">
+      <h1 class="title">SOBRE MI</h1>
+      <p>
+        Soy un desarrollador de FrontEnd con técnico en sistemas y computación,
+        buscando empleo como desarrollador web (FrontEnd) o FullStack; ya que me
+        apasiona desarrollar mis habilidades y aprendizajes. He realizado
+        diferentes cursos sobre desarrollo FrontEnd, Frameworks y algo de
+        desarrollo BackEnd con Nodejs y MongoDB; tambien he completado proyectos
+        personales con estas tecnologías.
+      </p>
+      <ul class="mainMenu">
+        <a href="secondPages/resumen.html" class="btn">Resúmen</a>
+        <a href="secondPages/portafolio.html" class="btn">Portafolio</a>
+        <a href="secondPages/formacion.html" class="btn">Formación</a>
+        <a href="secondPages/experiencia.html" class="btn">Experiencia</a>
+      </ul>
+    </section>
+    <script>
+      function mostrarCorreo() {
+        let boton = document.getElementById("emailBtn");
+        let direccionCorreo = document.getElementById("email");
 
-        </p>
-        <ul class="mainMenu">
-          <a href="secondPages/resumen.html" class="btn">Resumen</a>
-          <a href="secondPages/portafolio.html" class="btn">Portafolio</a>
-          <a href="secondPages/formacion.html" class="btn">Formación</a>
-          <a href="secondPages/experiencia.html" class="btn">Experiencia</a>
-        </ul>
-      </section>
-      <script>
-        function mostrarCorreo() {
-          let boton = document.getElementById("emailBtn");
-          let direccionCorreo = document.getElementById("email");
+        boton.style.display = "none";
+        direccionCorreo.style.display = "flex";
+      }
 
-          boton.style.display = "none";
-          direccionCorreo.style.display = "flex";
+      const copiar = async () => {
+        try {
+          let correo = document.querySelector(".textEmail").textContent;
+          await navigator.clipboard.writeText(correo);
+          console.log("Contenido copiado al portapapeles");
+
+          let span = document.querySelector('.copiado')
+          span.style.display = 'block'
+          
+          setTimeout(() => {
+            span.style.display = 'none'
+          }, 1000);
+          
+
+        } catch (err) {
+          console.error("Error al copiar: ", err);
         }
-      </script>
+      };
+    </script>
   </body>
 </html>
