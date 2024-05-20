@@ -48,7 +48,7 @@ p {
   outline: none;
   text-decoration: none;
   width: 25%;
-  text-align:center;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,10 +144,65 @@ h3 {
   margin: 2% 0% 5% 0%;
 }
 
-.linkedin {
-  display: block;
+
+#email {
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  width: 50%;
+  height: 10%;
+  justify-content: center;
+  font-size: 90%;
+  margin: 2%;
+}
+
+.textEmail{
+  display: flex;
+  align-items: center;
+}
+
+#copy{
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+}
+.copyImg {
+  filter: contrast(1);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.copyImg:hover {
+  filter: contrast(0);
+}
+
+.copiado{
+  display: none;
   margin: 0 auto;
-  height: 45%;
+  font-size: 80%;
+  color: #00ff99;
+}
+
+#redes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50%;
+  margin: 0px auto;
+}
+
+.git{
+  height: 50%;
+  transition: all 0.8s ease;
+}
+
+.git:hover{
+  filter: invert(1);
+  background-color: white;
+}
+
+.linkedin {
+  height: 50%;
   filter: brightness(0);
   transition: all 0.3s ease;
 }
@@ -156,11 +211,6 @@ h3 {
   filter: brightness(1);
 }
 
-#email {
-  justify-content: center;
-  font-size: 90%;
-  margin: 2%;
-}
 
 .mainMenu {
   display: flex;
@@ -254,9 +304,9 @@ details a:hover {
   background-color: white;
 }
 
-.details{
-    overflow-y: auto; /* Agrega desplazamiento vertical cuando sea necesario */
-    max-height: 40%; /* Establece una altura máxima */
+.details {
+  overflow-y: auto; /* Agrega desplazamiento vertical cuando sea necesario */
+  max-height: 40%; /* Establece una altura máxima */
 }
 
 /* CONTENIDO EXPERIENCIA*/
@@ -433,12 +483,12 @@ p {
     padding: 1vw;
     font-size: 1.2vw;
   }
-  .mainMenu{
+  .mainMenu {
     flex-wrap: wrap;
     width: 80%;
   }
 
-  .mainMenu a{
+  .mainMenu a {
     height: auto;
     width: 30%;
   }
@@ -471,10 +521,14 @@ p {
     padding: 1vw;
     font-size: 1.2vw;
   }
+  #index #email .textEmail{
+    display: flex;
+    justify-content: center;
+  }
 
   /*RESUMEN*/
 
-  #summary ul{
+  #summary ul {
     line-height: 2vh;
   }
 
@@ -498,7 +552,7 @@ p {
     font-size: 2vw;
   }
 
-  .projects{
+  .projects {
     justify-content: center;
   }
 
@@ -515,15 +569,15 @@ p {
 
   /*EXPEREIENCIA*/
 
-  #experience #right h2{
+  #experience #right h2 {
     font-size: 2.5vw;
   }
 
-  #experience .btn{
+  #experience .btn {
     margin-top: 10%;
   }
 
-  .video{
+  .video {
     width: 95%;
     height: 35vh;
     margin-top: 60%;
@@ -550,6 +604,11 @@ p {
   #summary li {
     font-size: 4vw;
     width: 90% !important;
+  }
+
+  #index #email .textEmail{
+    display: flex;
+    justify-content: center;
   }
 
   .btn {
