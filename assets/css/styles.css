@@ -193,6 +193,7 @@ h3 {
 
 .git{
   height: 50%;
+  border-radius: 100%;
   transition: all 0.8s ease;
 }
 
