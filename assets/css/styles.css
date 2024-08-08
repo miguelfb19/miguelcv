@@ -140,6 +140,16 @@ h3 {
   text-align: center;
 }
 
+.letter{
+  color: var(--colorGreen);
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.letter:hover{
+  filter: brightness(50%);
+}
+
 .emailBtn {
   margin: 2% 0% 5% 0%;
 }
@@ -411,7 +421,12 @@ p {
   }
 
   #email {
-    font-size: 70%;
+    font-size: 0.9em;
+  }
+
+  .letter{
+    font-size: 0.9em;
+    margin-bottom: 10px !important;
   }
 
   .title {
