@@ -71,6 +71,9 @@
       </ul>
     </section>
     <script>
+
+      // FUNCION PARA MOSTRAR CORREO
+
       function mostrarCorreo() {
         let boton = document.getElementById("emailBtn");
         let direccionCorreo = document.getElementById("email");
@@ -78,7 +81,8 @@
         boton.style.display = "none";
         direccionCorreo.style.display = "flex";
       }
-
+      // FUNCION PARA COPIAR AL PORTAPAPELES
+      
       const copiar = async () => {
         try {
           let correo = document.querySelector(".textEmail").textContent;
